@@ -7,7 +7,7 @@ using KX.Core.Observables;
 
 namespace KX.Core
 {
-    public abstract class KXBinder
+    public abstract class KXBinder : IDisposable
     {
         private readonly Type _viewModelType;
         protected Dictionary<string, PropertyInfo> ObservableProperties = new Dictionary<string, PropertyInfo>();
@@ -39,6 +39,16 @@ namespace KX.Core
                 }
             }
             return sb.ToString();
+        }
+
+        public void Dispose()
+        {            
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {            
         }
     }
 }

@@ -1,9 +1,9 @@
 using System;
 using KX.Core;
 
-namespace KX.Android
+namespace KX.Platform.Android
 {
-    internal class AndroidNavigator : KXNavigate
+    internal class KXAndroidNavigate : KXNavigate
     {
         public override void NavigateTo(Type viewModel)
         {

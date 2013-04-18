@@ -2,14 +2,14 @@ using Android.Widget;
 using KX.Core;
 using KX.Core.Observables;
 
-namespace KX.Android.Bindings
+namespace KX.Platform.Android.Bindings
 {
-    public class AndroidTextViewTextBinding : Binding
+    internal class TextViewTextBinding : KXBinding
     {
         private bool _disposed;
         private readonly Subscription _subscription;
 
-        public AndroidTextViewTextBinding(KXObservable observable, TextView textView)
+        public TextViewTextBinding(KXObservable observable, TextView textView)
         {
             _subscription = observable.Subscribe();
             _subscription.OnChange = value => textView.Text = value;

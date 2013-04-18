@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: Android.Runtime.ResourceDesignerAttribute("KX.Android.Resource", IsApplication=false)]
+[assembly: Android.Runtime.ResourceDesignerAttribute("KX.Platform.Android.Resource", IsApplication=false)]
 
-namespace KX.Android
+namespace KX.Platform.Android
 {
 	
 	
@@ -1668,7 +1668,7 @@ namespace KX.Android
 					16843362,
 					16843436,
 					16843437,
-					16843773};
+					16843759};
 			
 			// aapt resource value: 5
 			public static int SherlockSpinner_android_dropDownHorizontalOffset = 5;

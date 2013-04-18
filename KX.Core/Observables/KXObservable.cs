@@ -12,6 +12,9 @@ namespace KX.Core.Observables
             get { return _stringValue; }
             set
             {
+                if(_stringValue == value)
+                    return;
+
                 _stringValue = value;
 
                 foreach (var subscriber in _subscribers)

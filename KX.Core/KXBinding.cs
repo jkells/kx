@@ -2,7 +2,7 @@ using System;
 
 namespace KX.Core
 {
-    public class Binding : IDisposable
+    public class KXBinding : IDisposable
     {
         public virtual void Dispose(bool disposing)
         {            
