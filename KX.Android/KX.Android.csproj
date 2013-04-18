@@ -56,7 +56,7 @@
     <AndroidResource Include="Resources\Values\Strings.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ActionBarSherlock\ActionBarSherlock.csproj">
+    <ProjectReference Include="..\..\monodroid-samples\ActionBarSherlock\ActionBarSherlock\ActionBarSherlock.csproj">
       <Project>{2d5471b2-8255-4e47-97e9-eeb28678cc82}</Project>
       <Name>ActionBarSherlock</Name>
     </ProjectReference>
